@@ -14,3 +14,9 @@
 * `CREATE USER user@localhost IDENTIFIED BY 'Password';`
 * `GRANT ALL PRIVILEGES ON DatabaseName.* TO user@localhost IDENTIFIED BY 'Password';`
 
+## /casper/vmlinuz: file not found ubuntu boot
+
+I was facing issue with new install on ubuntu 14.04 from USB /casper/vmlinuz: file not found
+* `cd /casper &&  cp vmlinuz.efi vmlinuz ` --- we have a file name /casper/vmlinuz.efi which should be vmlinuz and rename was not working in that case so we need to cp of that file and it works
+
+
